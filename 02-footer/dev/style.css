@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
 
 * {
     margin: 0;
@@ -34,6 +34,14 @@ footer {
         gap: 20px;
         width: 100%;
     }
+
+    .category-title {
+        & h4 {
+            letter-spacing: 0.03rem;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
     
     .category-title .icon {
         display: none;
@@ -41,18 +49,15 @@ footer {
     
     .category-items {
         margin-top: 1rem;
+        & p {
+            letter-spacing: 0.03rem;
+            margin-bottom: 5px;
+            font-weight: 300;
+        }
+        
     }
     
-    h4 {
-        font-size: 20px;
-        /* margin-bottom: 1em; */
-        font-weight: 500;
-    }
-    
-    p {
-        font-weight: 100;
-        margin-bottom: 0.5em;
-    }
+   
 }
 
 

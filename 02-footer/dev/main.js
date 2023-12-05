@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const icon = category.querySelector('.icon');
 
         title.addEventListener('click', () => {
-            
             items.classList.toggle('active');
+
             // Cambiar la imagen cuando se activa/desactiva el toggle
             if (items.classList.contains('active')) {
-                icon.src = "../assets/svg/lop-academy-icon-minus.svg"; // Ruta de la nueva imagen
+                icon.src = "../assets/lop-academy-icon-minus.svg"; // Ruta de la nueva imagen
             } else {
-                icon.src = "../assets/svg/lop-academy-icon-plus.svg"; // Ruta de la imagen original
+                icon.src = "../assets/lop-academy-icon-plus.svg"; // Ruta de la imagen original
             }
         });
     });
