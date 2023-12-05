@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    margin-top: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2em 15% 3em 10%;
+
+    .footer-logo {
+        margin-right: 20%;
+        height: 50px;
+    }
+    
+    .categories {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .category-title .icon {
+        display: none;
+    }
+    
+    .category-items {
+        margin-top: 1rem;
+    }
+    
+    h4 {
+        font-size: 20px;
+        /* margin-bottom: 1em; */
+        font-weight: 500;
+    }
+    
+    p {
+        font-weight: 100;
+        margin-bottom: 0.5em;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    footer {
+        flex-direction: column;
+        
+        .footer-logo {
+            margin-bottom: 2.5rem;
+        }
+    
+        .categories {
+            flex-direction: column;
+        }
+    
+        .category-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        .category-title .icon {
+            display: block;
+        }
+    
+        .category-items {
+            display: none;
+            
+        }
+    
+        .category-items.active {
+            display: block;
+        }
+    }
+
+
+
+
+}

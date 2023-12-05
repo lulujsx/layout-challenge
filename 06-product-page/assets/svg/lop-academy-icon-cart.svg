@@ -1,0 +1,5 @@
+<svg id="cart" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <path id="Trazado_2933" data-name="Trazado 2933" d="M18.813,3.75H6.158a.627.627,0,0,1-.615-.487L5.017,1A1.253,1.253,0,0,0,3.763,0H.627A.626.626,0,0,0,0,.625v1.25A.626.626,0,0,0,.627,2.5h1.63a.614.614,0,0,1,.615.487L5.017,12.75a1.253,1.253,0,0,0,1.254,1H16.3a1.254,1.254,0,0,0,1.129-.875l2.508-7.5A1.252,1.252,0,0,0,18.813,3.75Z" transform="translate(0 0)" fill="#fff"/>
+  <path id="Trazado_2934" data-name="Trazado 2934" d="M5.528,17A2.5,2.5,0,1,0,3.02,14.5,2.5,2.5,0,0,0,5.528,17Z" transform="translate(0.755 3)" fill="#fff"/>
+  <path id="Trazado_2935" data-name="Trazado 2935" d="M13.575,17a2.5,2.5,0,1,0-2.508-2.5A2.5,2.5,0,0,0,13.575,17Z" transform="translate(2.767 3)" fill="#fff"/>
+</svg>
