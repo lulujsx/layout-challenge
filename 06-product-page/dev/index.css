@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap");
 
 * {
     margin: 0;
@@ -159,6 +159,10 @@ ul {
 }
 
 .second-container {
+    display: none;
+}
+
+.nav-megamenu {
     display: none;
 }
 
@@ -343,6 +347,60 @@ main {
     }
 }
 
+footer {
+        width: 100%;
+        background-color: #000000;
+        color: white;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem 1rem 2rem 1rem;
+
+        .footer-logo {
+            margin-bottom: 1.5rem;
+            height: 50px;
+        }
+
+        .categories {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+        }
+    
+        .category-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            & h4 {
+                letter-spacing: 0.03rem;
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+        .category-title .icon {
+            display: block;
+        }
+    
+        .category-items {
+            display: none;
+            margin-top: 1rem;
+            & p {
+                letter-spacing: 0.03rem;
+                margin-bottom: 10px;
+                font-weight: 300;
+            }
+            
+        }
+    
+        .category-items.active {
+            display: block;
+        }
+}
+
 
 
 /* Large Devices (Desktop) */
@@ -443,11 +501,17 @@ main {
         margin-left: 4px;
         margin-bottom: 4px;
     }
-    
+
+    .nav-category:hover img {
+        transform: rotate(180deg);
+        transition: all 0.3s ease;
+    }
+
+
     .nav-submenu {
         border: 1px solid #0000001A;
         position: relative;
-        z-index: 1;
+        z-index: 200;
     }
     
     .nav-submenu li a{
@@ -455,6 +519,44 @@ main {
         color: black;
         text-transform: none;
         padding-left: 10px;
+        
+    }
+
+   
+    .nav-megamenu {
+        position: absolute;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #0000001A;
+        left: 0;
+        flex-direction: column;
+        box-shadow: 0px 3px 6px #00000029;
+        z-index: 100;
+        display: none;
+    }
+
+    .nav-megamenu ul {
+        
+        padding: 40px 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-megamenu ul h3{
+        color: black;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .nav-megamenu li {
+        margin-bottom: 10px;
+    }
+
+    .nav-megamenu .nav-megamenu-category li a {
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
         
     }
 
@@ -645,6 +747,51 @@ main {
     }
 
     /* Footer styles */
+
+    footer {
+        width: 100%;
+        background-color: #000000;
+        color: white;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2em 15% 3em 10%;
+        
+        .footer-logo {
+            margin-right: 20%;
+            height: 50px;
+        }
+        .categories {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+        }
+        .category-title {
+            & h4 {
+                letter-spacing: 0.03rem;
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+        
+        .category-title .icon {
+            display: none;
+        }
+        
+        .category-items {
+            margin-top: 1rem;
+            display: block;
+            & p {
+                letter-spacing: 0.03rem;
+                margin-bottom: 5px;
+                font-weight: 300;
+            }
+            
+        }
+    }
 
   
 }
